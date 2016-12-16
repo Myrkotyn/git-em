@@ -1,3 +1,8 @@
 body {
-  background-color: #ddd;
-  border: 1px solid black; }
+  margin: 0px; }
+
+.test-git {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  background: green; }
