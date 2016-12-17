@@ -1,8 +1,89 @@
-body {
-  margin: 0px; }
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("/font/Roboto-Regular.ttf");
+  font-style: normal;
+  font-weight: normal; }
 
-.test-git {
-  width: 500px;
-  height: 300px;
-  margin: 0 auto;
+@font-face {
+  font-family: "HelveticaNeueLTStdLt";
+  src: url("/font/HelveticaNeueLTStd Lt.otf");
+  font-style: normal;
+  font-weight: 100; }
+
+@font-face {
+  font-family: "MerriweatherLightIt";
+  src: url("/font/Merriweather-LightIt.ttf");
+  font-style: normal;
+  font-weight: 100; }
+
+@font-face {
+  font-family: "MontserratRegular";
+  src: url("/font/Montserrat-Regular.ttf");
+  font-style: normal;
+  font-weight: 100; }
+
+body {
+  margin: 0;
   background: green; }
+
+header {
+  width: 1920px;
+  height: 945px;
+  background: white; }
+  header nav {
+    width: 660px;
+    margin: 0 auto; }
+    header nav a {
+      font-size: 13px;
+      font-family: 'RobotoRegular';
+      color: #979797;
+      text-decoration: none;
+      margin-right: 43px; }
+      header nav a:hover {
+        color: black; }
+      header nav a:nth-child(3) {
+        margin-right: 50px; }
+      header nav a:nth-child(0) {
+        margin: 0; }
+      header nav a:nth-child(5) {
+        margin-left: 50px; }
+      header nav a:last-child {
+        margin: 0; }
+    header nav ul {
+      list-style: none;
+      margin-top: 0; }
+    header nav li {
+      display: inline-block;
+      position: relative;
+      bottom: 20px; }
+      header nav li:nth-child(4) {
+        bottom: 0; }
+      header nav li .logo {
+        margin: 0; }
+  header .block-info {
+    position: relative;
+    top: 300px;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 50px; }
+    header .block-info h1 {
+      font-size: 44px;
+      font-family: 'HelveticaNeueLTStdLt';
+      font-weight: 100;
+      margin: 0; }
+    header .block-info h3 {
+      font-size: 16px;
+      font-family: 'MerriweatherLightIt';
+      color: #cdcdcd;
+      margin: 0 0 43px; }
+    header .block-info button {
+      width: 185px;
+      height: 55px;
+      border: 1px solid black;
+      background: none;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-family: 'MontserratRegular';
+      cursor: pointer;
+      color: black; }
