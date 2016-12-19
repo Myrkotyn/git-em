@@ -22,102 +22,316 @@
 	font-style: normal;
 	font-weight: 100;
 }
+@font-face {
+	font-family: "HelveticaNeueLTProRoman";
+	src: url("/font/HelveticaNeueLTPro-Roman.otf");
+	font-style: normal;
+	font-weight: 100;
+}
+@font-face {
+	font-family: "montserratLight";
+	src: url("/font/montserrat-light.ttf");
+	font-style: normal;
+	font-weight: 100;
+}
 
 body {
 	margin: 0;
-	background: green;
+	background: silver;
+	overflow-x: hidden;
 }
 
-header {
+.page {
 	width: 1920px; //100%
-	height: 945px;
+	margin: 0 auto;
+	overflow: hidden;
 	background: white;
 
-	nav {
-		width: 660px;
-		margin: 0 auto;
+	li {
+		list-style: none;
+	}
 
-		a {
-			font-size: 13px;
-			font-family: 'RobotoRegular';
-			color: #979797;
-			text-decoration: none;
-			margin-right: 43px;
+	header {
+		width: 100%;
+		height: 945px;
+		background: #ffffff;
+		margin: 0;
 
-			&:hover {
+		.nav-section {
+			position: relative;
+			float: right;
+			width: 100%;
+
+			nav {
+				width: 625px;
+				margin: 0 auto;
+
+				ul {
+					margin: 0;
+
+					li {
+						position: relative;
+						top: 20px;
+						font-size: 13px;
+						font-family: 'RobotoRegular';
+						color: #c4c4c4;
+						float: left;
+						margin-right: 45px;
+
+						&:hover {
+							color: black;
+						}
+
+						&:nth-child(4) {
+							margin-right: 60px;
+						}
+
+						a {
+							list-style: none;
+						}
+					}
+
+					.margin-right {
+						margin-right: 60px;
+					}
+
+					ul:nth-child(7) {
+						margin-right: 0;
+					}
+
+					.logo-li {
+						top: 0;
+					}
+				}
+			}
+		}
+
+		.block-info {
+			position: relative;
+			top: 300px;
+			width: 565px;
+			text-align: center;
+			margin: 0 auto;
+			padding: 0 50px;
+
+			h1 {
+				font-size: 44px;
+				font-family: 'HelveticaNeueLTStdLt';
+				font-weight: 100;
+				margin: 0;
+			}
+
+			h3 {
+				font-size: 16px;
+				font-family: 'MerriweatherLightIt';
+				color: #cdcdcd;
+				margin: 0 0 43px;
+			}
+
+			button {
+				width: 185px;
+				height: 55px;
+				border: 1px solid black;
+				background: none;
+				text-transform: uppercase;
+				font-size: 13px;
+				font-family: 'MontserratRegular';
+				cursor: pointer;
 				color: black;
 			}
+		}
+	}
+	//header
+	.section-about-Us {
+		width: 100%;
+		height: 1335px;
+		background: #1d1d1d;
+		background-image: url('/img/bgr-city.png');
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: contain;
+	}
 
-			&:nth-child(3) {
-				margin-right: 50px;
-			}
+	*,
+	*::after,
+	*::before {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	/* TIMELINE
+	–––––––––––––––––––––––––––––––––––––––––––––––––– */
+	.timeline ul li {
+		list-style-type: none;
+		position: relative;
+		width: 5px;
+		height: 185px;
+		margin: 0 auto;
+		padding-top: 50px;
+		background: #fff;
+	}
 
-			&:nth-child(0) {
-				margin: 0;
-			}
+	.timeline ul li::after {
+		content: '';
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
+		width: 24px;
+		height: 24px;
+		border: 5px solid white;
+		border-radius: 50%;
+		background: black;
+	}
 
-			&:nth-child(5) {
-				margin-left: 50px;
-			}
+	.timeline ul li div {
+		position: relative;
+		bottom: 0;
+		width: 400px;
+		padding: 15px;
+		font-size: 15px;
+		font-family: 'montserratLight';
+		color: #a0a0a0;
 
-			&:last-child {
-				margin: 0;
-			}
+		time {
+			color: white;
+			font-size: 48px;
+			font-family: 'HelveticaNeueLTProRoman';
 		}
 
-		ul {
-			list-style: none;
-			margin-top: 0;
+		.year-right {
+			float: right;
+			margin: 0 280px 25px 0;
 		}
 
-		li {
-			display: inline-block;
-			position: relative;
-			bottom: 20px;
-
-			&:nth-child(4) {
-				bottom: 0;
-			}
-
-			.logo {
-				margin: 0;
-			}
+		.year-left {
+			float: right;
+			margin: 0 0 25px 280px;
 		}
 	}
 
-	.block-info {
-		position: relative;
-		top: 300px;
-		width: 500px;
-		text-align: center;
-		margin: 0 auto;
-		padding: 0 50px;
+	.timeline ul li:nth-child(odd) div {
+		left: 45px;
+	}
 
-		h1 {
-			font-size: 44px;
-			font-family: 'HelveticaNeueLTStdLt';
-			font-weight: 100;
-			margin: 0;
+	.timeline ul li:nth-child(odd) div::before {
+		left: -15px;
+		border-width: 8px 16px 8px 0;
+		border-color: transparent #F45B69 transparent transparent;
+	}
+
+	.timeline ul li:nth-child(even) div {
+		left: -439px;
+	}
+
+	.timeline ul .emptyline {
+		height: 510px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			-ms-transform: translateX(-50%);
+			transform: translateX(-50%);
+			width: 24px;
+			height: 24px;
+			border: 5px solid white;
+			border-radius: 50%;
+			background: white;
+		}
+	}
+	/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+	.timeline ul li::after {
+		transition: background 0.5s ease-in-out;
+	}
+	// .timeline ul li.in-view::after {
+	// 	background: black;
+	// }
+	.timeline ul li div {
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.5s ease-in-out;
+	}
+
+	.timeline ul li:nth-child(odd) div {
+		transform: translate3d(200px, 0, 0);
+	}
+
+	.timeline ul li:nth-child(even) div {
+		transform: translate3d(-200px, 0, 0);
+	}
+
+	.timeline ul li.in-view div {
+		transform: none;
+		visibility: visible;
+		opacity: 1;
+	}
+	/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+	@media screen and (max-width: 900px) {
+		.timeline ul li div {
+			width: 250px;
 		}
 
-		h3 {
-			font-size: 16px;
-			font-family: 'MerriweatherLightIt';
-			color: #cdcdcd;
-			margin: 0 0 43px;
+		.timeline ul li:nth-child(even) div {
+			left: -289px;
+			/*250+45-6*/
+		}
+	}
+	@media screen and (max-width: 600px) {
+		.timeline ul li {
+			margin-left: 20px;
 		}
 
-		button {
-			width: 185px;
-			height: 55px;
-			border: 1px solid black;
-			background: none;
-			text-transform: uppercase;
-			font-size: 13px;
-			font-family: 'MontserratRegular';
-			cursor: pointer;
-			color: black;
+		.timeline ul li div {
+			width: calc(100vw - 91px);
 		}
+
+		.timeline ul li:nth-child(even) div {
+			left: 45px;
+		}
+
+		.timeline ul li:nth-child(even) div::before {
+			left: -15px;
+			border-width: 8px 16px 8px 0;
+			border-color: transparent #F45B69 transparent transparent;
+		}
+	}
+
+	.team-section {
+		width: 100%;
+		height: 950px;
+		background: white;
+	}
+	//team-section
+	.provide-section {
+		width: 100%;
+		height: 1451px;
+		background: #1d1d1d;
+		-ms-transform: rotate(-6deg);
+		transform: skewY(-6deg);
+		overflow: hidden;
+
+		.block-skew {
+			width: 100%;
+			/* height: 1451px; */
+			background: #1d1d1d;
+			-ms-transform: rotate(6deg);
+			transform: skewY(6deg);
+
+			p {
+				color: white;
+			}
+		}
+	}
+	//provide-section
+	footer {
+		width: 100%;
+		height: 1240px;
 	}
 }
-//header
+//page
+@import 'media.scss';

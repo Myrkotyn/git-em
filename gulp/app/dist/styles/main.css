@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "RobotoRegular";
   src: url("/font/Roboto-Regular.ttf");
@@ -22,68 +23,241 @@
   font-style: normal;
   font-weight: 100; }
 
+@font-face {
+  font-family: "HelveticaNeueLTProRoman";
+  src: url("/font/HelveticaNeueLTPro-Roman.otf");
+  font-style: normal;
+  font-weight: 100; }
+
+@font-face {
+  font-family: "montserratLight";
+  src: url("/font/montserrat-light.ttf");
+  font-style: normal;
+  font-weight: 100; }
+
 body {
   margin: 0;
-  background: green; }
+  background: silver;
+  overflow-x: hidden; }
 
-header {
+.page {
   width: 1920px;
-  height: 945px;
-  background: white; }
-  header nav {
-    width: 660px;
-    margin: 0 auto; }
-    header nav a {
-      font-size: 13px;
-      font-family: 'RobotoRegular';
-      color: #979797;
-      text-decoration: none;
-      margin-right: 43px; }
-      header nav a:hover {
-        color: black; }
-      header nav a:nth-child(3) {
-        margin-right: 50px; }
-      header nav a:nth-child(0) {
-        margin: 0; }
-      header nav a:nth-child(5) {
-        margin-left: 50px; }
-      header nav a:last-child {
-        margin: 0; }
-    header nav ul {
-      list-style: none;
-      margin-top: 0; }
-    header nav li {
-      display: inline-block;
+  margin: 0 auto;
+  overflow: hidden;
+  background: white;
+  /* TIMELINE
+	–––––––––––––––––––––––––––––––––––––––––––––––––– */
+  /* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+  /* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */ }
+  .page li {
+    list-style: none; }
+  .page header {
+    width: 100%;
+    height: 945px;
+    background: #ffffff;
+    margin: 0; }
+    .page header .nav-section {
       position: relative;
-      bottom: 20px; }
-      header nav li:nth-child(4) {
-        bottom: 0; }
-      header nav li .logo {
+      float: right;
+      width: 100%; }
+      .page header .nav-section nav {
+        width: 625px;
+        margin: 0 auto; }
+        .page header .nav-section nav ul {
+          margin: 0; }
+          .page header .nav-section nav ul li {
+            position: relative;
+            top: 20px;
+            font-size: 13px;
+            font-family: 'RobotoRegular';
+            color: #c4c4c4;
+            float: left;
+            margin-right: 45px; }
+            .page header .nav-section nav ul li:hover {
+              color: black; }
+            .page header .nav-section nav ul li:nth-child(4) {
+              margin-right: 60px; }
+            .page header .nav-section nav ul li a {
+              list-style: none; }
+          .page header .nav-section nav ul .margin-right {
+            margin-right: 60px; }
+          .page header .nav-section nav ul ul:nth-child(7) {
+            margin-right: 0; }
+          .page header .nav-section nav ul .logo-li {
+            top: 0; }
+    .page header .block-info {
+      position: relative;
+      top: 300px;
+      width: 565px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0 50px; }
+      .page header .block-info h1 {
+        font-size: 44px;
+        font-family: 'HelveticaNeueLTStdLt';
+        font-weight: 100;
         margin: 0; }
-  header .block-info {
+      .page header .block-info h3 {
+        font-size: 16px;
+        font-family: 'MerriweatherLightIt';
+        color: #cdcdcd;
+        margin: 0 0 43px; }
+      .page header .block-info button {
+        width: 185px;
+        height: 55px;
+        border: 1px solid black;
+        background: none;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-family: 'MontserratRegular';
+        cursor: pointer;
+        color: black; }
+  .page .section-about-Us {
+    width: 100%;
+    height: 1335px;
+    background: #1d1d1d;
+    background-image: url("/img/bgr-city.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain; }
+  .page *,
+  .page *::after,
+  .page *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  .page .timeline ul li {
+    list-style-type: none;
     position: relative;
-    top: 300px;
-    width: 500px;
-    text-align: center;
+    width: 5px;
+    height: 185px;
     margin: 0 auto;
-    padding: 0 50px; }
-    header .block-info h1 {
-      font-size: 44px;
-      font-family: 'HelveticaNeueLTStdLt';
-      font-weight: 100;
-      margin: 0; }
-    header .block-info h3 {
-      font-size: 16px;
-      font-family: 'MerriweatherLightIt';
-      color: #cdcdcd;
-      margin: 0 0 43px; }
-    header .block-info button {
-      width: 185px;
-      height: 55px;
-      border: 1px solid black;
-      background: none;
-      text-transform: uppercase;
-      font-size: 13px;
-      font-family: 'MontserratRegular';
-      cursor: pointer;
-      color: black; }
+    padding-top: 50px;
+    background: #fff; }
+  .page .timeline ul li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 24px;
+    height: 24px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background: black; }
+  .page .timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    font-size: 15px;
+    font-family: 'montserratLight';
+    color: #a0a0a0; }
+    .page .timeline ul li div time {
+      color: white;
+      font-size: 48px;
+      font-family: 'HelveticaNeueLTProRoman'; }
+    .page .timeline ul li div .year-right {
+      float: right;
+      margin: 0 280px 25px 0; }
+    .page .timeline ul li div .year-left {
+      float: right;
+      margin: 0 0 25px 280px; }
+  .page .timeline ul li:nth-child(odd) div {
+    left: 45px; }
+  .page .timeline ul li:nth-child(odd) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #F45B69 transparent transparent; }
+  .page .timeline ul li:nth-child(even) div {
+    left: -439px; }
+  .page .timeline ul .emptyline {
+    height: 510px; }
+    .page .timeline ul .emptyline::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 24px;
+      height: 24px;
+      border: 5px solid white;
+      border-radius: 50%;
+      background: white; }
+  .page .timeline ul li::after {
+    transition: background 0.5s ease-in-out; }
+  .page .timeline ul li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out; }
+  .page .timeline ul li:nth-child(odd) div {
+    transform: translate3d(200px, 0, 0); }
+  .page .timeline ul li:nth-child(even) div {
+    transform: translate3d(-200px, 0, 0); }
+  .page .timeline ul li.in-view div {
+    -ms-transform: none;
+        transform: none;
+    visibility: visible;
+    opacity: 1; }
+  @media screen and (max-width: 900px) {
+    .page .timeline ul li div {
+      width: 250px; }
+    .page .timeline ul li:nth-child(even) div {
+      left: -289px;
+      /*250+45-6*/ } }
+  @media screen and (max-width: 600px) {
+    .page .timeline ul li {
+      margin-left: 20px; }
+    .page .timeline ul li div {
+      width: calc(100vw - 91px); }
+    .page .timeline ul li:nth-child(even) div {
+      left: 45px; }
+    .page .timeline ul li:nth-child(even) div::before {
+      left: -15px;
+      border-width: 8px 16px 8px 0;
+      border-color: transparent #F45B69 transparent transparent; } }
+  .page .team-section {
+    width: 100%;
+    height: 950px;
+    background: white; }
+  .page .provide-section {
+    width: 100%;
+    height: 1451px;
+    background: #1d1d1d;
+    -ms-transform: rotate(-6deg);
+    transform: skewY(-6deg);
+    overflow: hidden; }
+    .page .provide-section .block-skew {
+      width: 100%;
+      /* height: 1451px; */
+      background: #1d1d1d;
+      -ms-transform: rotate(6deg);
+      transform: skewY(6deg); }
+      .page .provide-section .block-skew p {
+        color: white; }
+  .page footer {
+    width: 100%;
+    height: 1240px; }
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px; }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/ } }
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px; }
+  .timeline ul li div {
+    width: calc(100vw - 91px); }
+  .timeline ul li:nth-child(even) div {
+    left: 45px; }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #F45B69 transparent transparent; } }
