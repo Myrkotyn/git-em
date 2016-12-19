@@ -120,7 +120,7 @@ body {
     background: #1d1d1d;
     background-image: url("/img/bgr-city.png");
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center 101%;
     background-size: contain; }
   .page *,
   .page *::after,
@@ -147,7 +147,7 @@ body {
     height: 24px;
     border: 5px solid white;
     border-radius: 50%;
-    background: black; }
+    background: #1d1d1d; }
   .page .timeline ul li div {
     position: relative;
     bottom: 0;
@@ -222,8 +222,60 @@ body {
       border-color: transparent #F45B69 transparent transparent; } }
   .page .team-section {
     width: 100%;
-    height: 950px;
+    height: 770px;
     background: white; }
+    .page .team-section .block-chapter {
+      width: 570px;
+      margin: 0 auto;
+      text-align: center; }
+      .page .team-section .block-chapter h1 {
+        font-size: 34px;
+        font-family: 'HelveticaNeueLTStdLt';
+        font-weight: 100;
+        margin: 85px 0 0; }
+      .page .team-section .block-chapter h3 {
+        font-size: 16px;
+        font-family: 'MerriweatherLightIt';
+        color: #cdcdcd;
+        margin: 0 0 120px; }
+    .page .team-section .box-avatar-team {
+      width: 88%;
+      margin: 0 auto; }
+      .page .team-section .box-avatar-team .block-avatar {
+        display: inline-block;
+        padding: 0 1%;
+        text-align: center;
+        margin: 0 10%; }
+        .page .team-section .box-avatar-team .block-avatar:first-child {
+          position: relative;
+          top: 90px; }
+        .page .team-section .box-avatar-team .block-avatar:last-child {
+          position: relative;
+          top: 90px; }
+        .page .team-section .box-avatar-team .block-avatar .avatar {
+          width: 90%;
+          margin: 0 auto;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-bottom: 30px; }
+        .page .team-section .box-avatar-team .block-avatar .name {
+          font-size: 24px;
+          font-family: 'HelveticaNeueLTProRoman'; }
+        .page .team-section .box-avatar-team .block-avatar .post {
+          font-size: 13px;
+          font-family: 'HelveticaNeueLTProRoman';
+          color: #cdcdcd; }
+        .page .team-section .box-avatar-team .block-avatar .img-icon {
+          width: 100%;
+          margin-top: 25px; }
+          .page .team-section .box-avatar-team .block-avatar .img-icon .image-icon-twitter {
+            position: relative;
+            float: left;
+            left: 38%; }
+          .page .team-section .box-avatar-team .block-avatar .img-icon .image-icon-insta {
+            position: relative;
+            float: right;
+            right: 38%; }
   .page .provide-section {
     width: 100%;
     height: 1451px;
@@ -237,8 +289,36 @@ body {
       background: #1d1d1d;
       -ms-transform: rotate(6deg);
       transform: skewY(6deg); }
-      .page .provide-section .block-skew p {
-        color: white; }
+      .page .provide-section .block-skew .block-wrap {
+        position: relative;
+        top: 100px;
+        width: 63%;
+        height: 1435px;
+        margin: 0 auto;
+        border: 1px solid white; }
+        .page .provide-section .block-skew .block-wrap .block-chapter {
+          text-align: center;
+          padding: 0 20%; }
+          .page .provide-section .block-skew .block-wrap .block-chapter h1 {
+            color: white;
+            font-size: 34px;
+            font-family: 'HelveticaNeueLTStdLt';
+            font-weight: 100; }
+          .page .provide-section .block-skew .block-wrap .block-chapter h3 {
+            font-size: 16px;
+            font-family: 'MerriweatherLightIt';
+            color: #636363; }
+        .page .provide-section .block-skew .block-wrap .blocks-services {
+          width: 327px; }
+          .page .provide-section .block-skew .block-wrap .blocks-services .analytics-block {
+            width: 172px;
+            height: 172px;
+            border: 6px solid white;
+            border-radius: 50%; }
+            .page .provide-section .block-skew .block-wrap .blocks-services .analytics-block img {
+              position: relative;
+              left: 33%;
+              top: 33%; }
   .page footer {
     width: 100%;
     height: 1240px; }
