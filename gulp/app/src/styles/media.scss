@@ -40,3 +40,147 @@
 // 		left: 10%;
 // 	}
 // }
+@media (min-width: 1200px) and (max-width: 1365px) {
+    .page header {
+        height: 770px;
+    }
+
+    .page header .block-info h1 {
+        font-size: 33px;
+    }
+
+    .page header .block-info h3 {
+        font-size: 12px;
+    }
+
+    .page .timeline ul li.in-view div {
+        font-size: 13px;
+    }
+
+    .page .timeline ul li div .year-right {
+        margin: 0 285px 7px 0;
+    }
+
+    .page .timeline ul li div time {
+        font-size: 37px;
+    }
+
+    .page .team-section .box-avatar-team .block-avatar .avatar {
+        width: 110px;
+        height: 110px;
+    }
+
+    .page .team-section .box-avatar-team .block-avatar .avatar img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .page .team-section .box-avatar-team .block-avatar .img-icon .image-icon-insta {
+        right: 25%;
+    }
+
+    .page .team-section .box-avatar-team .block-avatar .img-icon .image-icon-twitter {
+        left: 25%;
+    }
+
+    .page .provide-section .block-skew .block-wrap .blocks-services .analytics-block {
+        width: 115px;
+        height: 115px;
+    }
+
+    .page .provide-section .block-skew .block-wrap button {
+        width: 200px;
+        height: 50px;
+    }
+
+    .page footer .block-wpar-footer-content input[type='text'] {
+        max-width: 695px;
+        min-width: 695px;
+        max-height: 45px;
+        min-height: 45px;
+    }
+
+    .page footer .block-wpar-footer-content textarea {
+        max-width: 695px;
+        min-width: 695px;
+    }
+
+    .page footer .block-wpar-footer-content button[type="submit"] {
+        max-width: 695px;
+        min-width: 695px;
+        max-height: 45px;
+        min-height: 45px;
+    }
+}
+@media (min-width: 1366px) and (max-width: 1599px) {
+    .page header {
+        height: 770px;
+    }
+
+    .page header .block-info h1 {
+        font-size: 33px;
+    }
+
+    .page header .block-info h3 {
+        font-size: 12px;
+    }
+
+    .page .timeline ul li.in-view div {
+        font-size: 13px;
+    }
+
+    .page .timeline ul li div .year-right {
+        margin: 0 285px 7px 0;
+    }
+
+    .page .timeline ul li div time {
+        font-size: 37px;
+    }
+    //sss
+    .page .team-section .box-avatar-team .block-avatar .avatar {
+        width: 110px;
+        height: 110px;
+    }
+
+    .page .team-section .box-avatar-team .block-avatar .avatar img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .page .team-section .box-avatar-team .block-avatar .img-icon .image-icon-insta {
+        right: 25%;
+    }
+
+    .page .team-section .box-avatar-team .block-avatar .img-icon .image-icon-twitter {
+        left: 25%;
+    }
+
+    .page .provide-section .block-skew .block-wrap .blocks-services .analytics-block {
+        width: 115px;
+        height: 115px;
+    }
+
+    .page .provide-section .block-skew .block-wrap button {
+        width: 200px;
+        height: 50px;
+    }
+
+    .page footer .block-wpar-footer-content input[type='text'] {
+        max-width: 695px;
+        min-width: 695px;
+        max-height: 45px;
+        min-height: 45px;
+    }
+
+    .page footer .block-wpar-footer-content textarea {
+        max-width: 695px;
+        min-width: 695px;
+    }
+
+    .page footer .block-wpar-footer-content button[type="submit"] {
+        max-width: 695px;
+        min-width: 695px;
+        max-height: 45px;
+        min-height: 45px;
+    }
+}
