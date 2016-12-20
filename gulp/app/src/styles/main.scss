@@ -11,6 +11,18 @@
 	font-weight: 100;
 }
 @font-face {
+	font-family: "HelveticaNeueLTProRoman";
+	src: url("/font/HelveticaNeueLTPro-Roman.otf");
+	font-style: normal;
+	font-weight: 100;
+}
+@font-face {
+	font-family: "HelveticaNeueLTProMd";
+	src: url("/font/HelveticaNeueLTProMd.ttf");
+	font-style: normal;
+	font-weight: 100;
+}
+@font-face {
 	font-family: "MerriweatherLightIt";
 	src: url("/font/Merriweather-LightIt.ttf");
 	font-style: normal;
@@ -19,12 +31,6 @@
 @font-face {
 	font-family: "MontserratRegular";
 	src: url("/font/Montserrat-Regular.ttf");
-	font-style: normal;
-	font-weight: 100;
-}
-@font-face {
-	font-family: "HelveticaNeueLTProRoman";
-	src: url("/font/HelveticaNeueLTPro-Roman.otf");
 	font-style: normal;
 	font-weight: 100;
 }
@@ -42,10 +48,15 @@ body {
 }
 
 .page {
-	width: 1920px; //100%
+	width: 100%; //100%
 	margin: 0 auto;
 	overflow: hidden;
 	background: white;
+
+	.wrap-flex-center {
+		display: flex;
+		justify-content: center;
+	}
 
 	li {
 		list-style: none;
@@ -202,7 +213,7 @@ body {
 
 		.year-right {
 			float: right;
-			margin: 0 280px 25px 0;
+			margin: 0 255px 25px 0;
 		}
 
 		.year-left {
@@ -406,11 +417,15 @@ body {
 				width: 63%;
 				height: 1435px;
 				margin: 0 auto;
-				border: 1px solid white;
+				background-image: url("/img/post.png");
+				background-position: center 645px;
+				background-size: contain;
+				background-repeat: no-repeat;
 
 				.block-chapter {
 					text-align: center;
 					padding: 0 20%;
+					margin-bottom: 215px;
 
 					h1 {
 						color: white;
@@ -427,20 +442,56 @@ body {
 				}
 
 				.blocks-services {
-					width: 327px;
+					display: inline-block;
+					width: 32%;
+					height: auto;
+					padding: 0 30px;
 
 					.analytics-block {
 						width: 172px;
 						height: 172px;
 						border: 6px solid white;
 						border-radius: 50%;
+						margin: 0 auto;
 
 						img {
+							display: block;
 							position: relative;
-							left: 33%;
-							top: 33%;
+							width: 52%;
+							margin: 0 auto;
+							top: 27%;
 						}
 					}
+
+					span {
+						display: block;
+						color: #343434;
+						font-size: 18px;
+						font-family: 'HelveticaNeueLTStdLt';
+						text-align: center;
+					}
+
+					.name-block-function {
+						color: white;
+						font-size: 26px;
+						font-family: 'HelveticaNeueLTStdLt';
+						margin: 40px 0;
+					}
+				}
+
+				button {
+					display: block;
+					width: 215px;
+					height: 65px;
+					background: white;
+					border: none;
+					font-size: 16px;
+					font-family: 'HelveticaNeueLTProMd';
+					text-transform: uppercase;
+					color: black;
+					margin: 550px auto 0;
+					cursor: pointer;
+					padding-top: 7px;
 				}
 			}
 		}
@@ -449,6 +500,114 @@ body {
 	footer {
 		width: 100%;
 		height: 1240px;
+
+		.block-wpar-footer-content {
+			position: relative;
+			top: 195px;
+			width: 780px;
+			margin: 0 auto;
+
+			.block-chapter {
+				text-align: center;
+				padding: 0 20%;
+				margin-bottom: 65px;
+
+				h1 {
+					color: black;
+					font-size: 34px;
+					font-family: 'HelveticaNeueLTStdLt';
+					font-weight: 100;
+				}
+
+				h3 {
+					font-size: 16px;
+					font-family: 'MerriweatherLightIt';
+					color: #636363;
+				}
+			}
+
+			.box-wrap-icon-contact {
+				display: -ms-flexbox;
+				display: flex;
+				-ms-flex-pack: center;
+				justify-content: space-between;
+				width: 62%;
+				margin: 0 auto;
+
+				.contact-icon-blocks {
+					.block-icon {
+						width: auto;
+						text-align: center;
+						font-size: 12px;
+						font-family: 'HelveticaNeueLTStdLt';
+
+						a {
+							color: #adadad;
+							text-decoration: none;
+						}
+
+						img {
+							margin-bottom: 5px;
+						}
+					}
+				}
+			}
+
+			input[type='text'] {
+				max-width: 770px;
+				min-width: 770px;
+				max-height: 52px;
+				min-height: 52px;
+				background: none;
+				text-align: center;
+				border: 1px solid #999999;
+				margin-bottom: 20px;
+				font-size: 15px;
+				font-family: 'HelveticaNeueLTStdLt';
+				color: #999999;
+				outline: none;
+			}
+
+			textarea {
+				max-width: 770px;
+				min-width: 770px;
+				max-height: 195px;
+				min-height: 195px;
+				font-size: 15px;
+				font-family: 'HelveticaNeueLTStdLt';
+				color: #999999;
+				background: none;
+				text-align: left;
+				border: 1px solid #999999;
+				outline: none;
+				padding: 20px;
+			}
+
+			button[type="submit"] {
+				max-width: 770px;
+				min-width: 770px;
+				max-height: 52px;
+				min-height: 52px;
+				font-size: 17px;
+				font-family: 'HelveticaNeueLTProMd';
+				text-align: center;
+				background: black;
+				color: white;
+				border: none;
+				outline: none;
+				cursor: pointer;
+			}
+		}
+
+		.copiright {
+			display: block;
+			position: relative;
+			top: 360px;
+			font-size: 14px;
+			font-family: 'HelveticaNeueLTProRoman';
+			text-align: center;
+			color: #636363;
+		}
 	}
 }
 //page

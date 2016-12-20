@@ -1,29 +1,42 @@
-@media screen and (max-width: 900px) {
-    .timeline ul li div {
-        width: 250px;
-    }
-
-    .timeline ul li:nth-child(even) div {
-        left: -289px;
-        /*250+45-6*/
-    }
-}
-@media screen and (max-width: 600px) {
-    .timeline ul li {
-        margin-left: 20px;
-    }
-
-    .timeline ul li div {
-        width: calc(100vw - 91px);
-    }
-
-    .timeline ul li:nth-child(even) div {
-        left: 45px;
-    }
-
-    .timeline ul li:nth-child(even) div::before {
-        left: -15px;
-        border-width: 8px 16px 8px 0;
-        border-color: transparent #F45B69 transparent transparent;
-    }
-}
+// @media screen and (max-width: 900px) {
+//     .timeline ul li div {
+//         width: 250px;
+//     }
+//
+//     .timeline ul li:nth-child(even) div {
+//         left: -289px;
+//         /*250+45-6*/
+//     }
+// }
+// @media screen and (max-width: 600px) {
+//     .timeline ul li {
+//         margin-left: 20px;
+//     }
+//
+//     .timeline ul li div {
+//         width: calc(100vw - 91px);
+//     }
+//
+//     .timeline ul li:nth-child(even) div {
+//         left: 45px;
+//     }
+//
+//     .timeline ul li:nth-child(even) div::before {
+//         left: -15px;
+//         border-width: 8px 16px 8px 0;
+//         border-color: transparent #F45B69 transparent transparent;
+//     }
+// }
+// @media (min-width: 1920px) { /* your code */ }
+// @media (min-width: 1600px) and (max-width: 1919px) {}
+// @media (min-width: 1366px) and (max-width: 1599px) {}
+// @media (min-width: 1200px) and (max-width: 1365px) {}
+// @media (min-width: 980px) and (max-width: 1199px) {}
+// @media (min-width: 769px) and (max-width: 979px) {}
+// @media (min-width: 479px) and (max-width: 768px) {}
+// @media max-width: 478px {}
+// @media (min-width:1200px) and (max-width:1365px) {
+// 	.page header nav {
+// 		left: 10%;
+// 	}
+// }
